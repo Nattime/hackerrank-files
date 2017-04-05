@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# compile and run cpp 11 files
+
+file=20
+
+g++ "$file".cpp -o $file -std=c++11
+
+./$file < "$file".txt
+
+exit 0
